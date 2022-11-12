@@ -2,7 +2,7 @@ local M = {}
 
 local colors = {
 red            ="#ef8690",
-blue           ="#29aeff",
+blue           ="#00bdfa ",
 yellow         ="#CFDF30",
 green          ="#80d200 ",
 --constructor
@@ -225,7 +225,7 @@ local highlights = {
   { hg = 'GitSignsChange', fg = colors.yellow },
   { hg = 'GitSignsDelete', fg = colors.red },
 }
-
+ 
 M.colorscheme = function()
   local highlight_cmds = {}
   for idx = 1, #highlights do
