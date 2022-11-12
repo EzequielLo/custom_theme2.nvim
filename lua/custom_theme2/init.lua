@@ -151,7 +151,7 @@ local highlights = {
   { hg = 'Debug', fg = colors.Debug }, --debugging statements
   { hg = 'Underlined', gui = 'underline', cterm = 'underline' }, --text that stands out, HTML links
   { hg = 'Ignore', fg = colors.Ignore }, --left blank, hidden
-  { hg = 'Error',  bg= colors., fg = colors.Error }, --any erroneous construct
+  { hg = 'Error',  fg = colors.Error }, --any erroneous construct
   { hg = 'Todo', fg = colors.Todo }, --anything that needs extra attention; mostly the keywords TODO FIXME and XXX
 
   -- Highlighting Groups (descriptions and ordering from ` =h highlight-groups`) {{{
