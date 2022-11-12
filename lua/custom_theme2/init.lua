@@ -1,10 +1,10 @@
 local M = {}
 
 local colors = {
-red            ="#a60000",
-blue           ="#0031a9",
-yellow         ="#813e00",
-green          ="#005e00",
+red            ="#ef8690",
+blue           ="#29aeff",
+yellow         ="#CFDF30",
+green          ="#80d200 ",
 --constructor
 Comment        ="#a8a8a8",
 Constant       ="#00bcff" ,
@@ -98,7 +98,7 @@ EndOfBufferFg   ="#a8a8a8" ,
 DirectoryFg     ="#44bc11", 
 QuestionFg      ="#cfdf30" ,
 MoreMsgFg       ="#70c900" ,
-ModeMsgFg       ="#bc44" ,
+ModeMsgFg       ="#44bc44" ,
 IgnoreBg        ="#191a1b", 
 IgnoreFg        ="#a8a8a8" ,
 ConcealBg       ="#a8a8a8" ,
@@ -151,7 +151,7 @@ local highlights = {
   { hg = 'Debug', fg = colors.Debug }, --debugging statements
   { hg = 'Underlined', gui = 'underline', cterm = 'underline' }, --text that stands out, HTML links
   { hg = 'Ignore', fg = colors.Ignore }, --left blank, hidden
-  { hg = 'Error', fg = colors.Error }, --any erroneous construct
+  { hg = 'Error',  bg= colors., fg = colors.Error }, --any erroneous construct
   { hg = 'Todo', fg = colors.Todo }, --anything that needs extra attention; mostly the keywords TODO FIXME and XXX
 
   -- Highlighting Groups (descriptions and ordering from ` =h highlight-groups`) {{{
