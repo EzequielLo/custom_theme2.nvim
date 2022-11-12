@@ -1,1 +1,1 @@
-lua require('custom_theme').colorscheme()
+lua require('custom_theme2').colorscheme()
