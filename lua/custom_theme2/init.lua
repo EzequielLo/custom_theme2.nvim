@@ -172,7 +172,7 @@ local highlights = {
   { hg = 'SignColumn' }, --column where signs are displayed
   { hg = 'IncSearch', fg = colors.IncSearcFg, bg = colors.IncSearcBg }, --'incsearch' highlighting; also used for the text replaced with ":s///c"
   { hg = 'LineNr', fg = colors.LineNrFg }, --Line number for " =number" and ":#" commands, and when 'number' or 'relativenumber' option is set.
-  { hg = 'CursorLineNr', fg = colors.CursorLineNrFg }, --Like LineNr when 'cursorline' or 'relativenumber' is set for the cursor line.
+  { hg = 'CursorLineNr', fg = colors.CursorLineNrFg, bg =colors.NormalBg  }, --Like LineNr when 'cursorline' or 'relativenumber' is set for the cursor line.
   { hg = 'MatchParen', fg = colors.MatchParenFg, gui = 'underline', cterm = 'underline' }, --The character under the cursor or just before it, if it is a paired bracket, and its match.
   { hg = 'ModeMsg' }, --'showmode' message (e.g., "-- INSERT --")
   { hg = 'MoreMsg' }, --more-prompt
