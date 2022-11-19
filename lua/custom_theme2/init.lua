@@ -5,7 +5,7 @@ local colors = {
   dark_red = '#EF8B50',
   green = '#44BC44',
   yellow = ' #eecc00',
-  dark_yellow = '#b0aa00',
+  dark_yellow = '#f4923b',
   blue = ' #2fafff',
   purple = '#b6a0ff',
   cyan = '#00d3d0',
@@ -16,9 +16,9 @@ local colors = {
   comment_grey = '#a8a8a8',
   gutter_fg_grey = '#a8a8a8 ',
   cursor_grey = '#191a1b',
-  visual_grey = '#3E4452',
+  visual_grey = '#595959',
   menu_grey = '#ffffff',
-  special_grey = '#00cd68',
+  special_grey = '#bfbfbf',
   vertsplit = '#191a1b',
 }
 
