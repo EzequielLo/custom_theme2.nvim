@@ -1,14 +1,14 @@
 local M = {}
 
 local colors = {
-  red = '#8a0000',
-  dark_red = '#a60000',
-  green = '#004c2e',
-  yellow = '#702f00',
-  dark_yellow = '#813e00',
-  blue = '#0030b4',
-  purple = '#5c2092',
-  cyan = '#003f8a',
+  red = '#FEACD0',
+  dark_red = '#F78FE7',
+  green = '#44BC44',
+  yellow = ' #EECC00',
+  dark_yellow = '#F4923B',
+  blue = ' #00BCFF',
+  purple = '#B6A0FF',
+  cyan = '#00D3D0',
   white = '#000000',
   black = '#ffffff',
   background = '#000000',
