@@ -46,8 +46,8 @@ local highlights = {
   { hg = 'StorageClass', fg = colors.purple }, --static, register, volatile, etc.
   { hg = 'Structure', fg = colors.purple }, --struct, union, enum, etc.
   { hg = 'Typedef', fg = colors.purple }, --A typedef
-  { hg = 'Special', fg = colors.foreground }, --any special symbol
-  { hg = 'SpecialChar', fg = colors.foreground}, --special character in a constant
+  { hg = 'Special', fg = colors.blue }, --any special symbol
+  { hg = 'SpecialChar', fg = colors.blue}, --special character in a constant
   { hg = 'Tag' }, --you can use CTRL-] on this
   { hg = 'Delimiter',fg = colors.foreground }, --character that needs attention
   { hg = 'SpecialComment', fg = colors.comment_grey }, --special things inside a comment
