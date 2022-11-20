@@ -28,7 +28,7 @@ local highlights = {
   { hg = 'Number', fg = colors.red }, --a number constant: 234, 0xff
   { hg = 'Boolean', fg = colors.red }, --a boolean constant: TRUE, false
   { hg = 'Float', fg = colors.red }, --a floating point constant: 2.3e10
-  { hg = 'Identifier', fg = colors.foreground}, --any variable name
+  { hg = 'Identifier', fg = colors.blue}, --any variable name
   { hg = 'Function', fg = colors.blue }, --function name (also: methods for classes)
   { hg = 'Statement', fg = colors.purple }, --any statement
   { hg = 'Conditional', fg = colors.purple }, --if, then, else, endif, switch, etc.
@@ -46,8 +46,8 @@ local highlights = {
   { hg = 'StorageClass', fg = colors.purple }, --static, register, volatile, etc.
   { hg = 'Structure', fg = colors.purple }, --struct, union, enum, etc.
   { hg = 'Typedef', fg = colors.purple }, --A typedef
-  { hg = 'Special', fg = colors.blue }, --any special symbol
-  { hg = 'SpecialChar', fg = colors.blue}, --special character in a constant
+  { hg = 'Special', fg = colors.foreground }, --any special symbol
+  --{ hg = 'SpecialChar', fg = colors.blue}, --special character in a constant
   { hg = 'Tag' }, --you can use CTRL-] on this
   { hg = 'Delimiter',fg = colors.foreground }, --character that needs attention
   { hg = 'SpecialComment', fg = colors.comment_grey }, --special things inside a comment
