@@ -22,31 +22,31 @@ local highlights = {
 
   -- Syntax Groups (descriptions and ordering from `:h w18`)
   { hg = 'Comment', fg = colors.comment_grey, gui = 'italic', cterm = 'italic' }, -- any comment
-  { hg = 'Constant', fg = colors.foreground }, --any constant
+  --{ hg = 'Constant', fg = colors.foreground }, --any constant
   { hg = 'String', fg = colors.green }, --a string constant: "this is a string"
   { hg = 'Character', fg = colors.green }, --a character constant: 'c', '\n'
   { hg = 'Number', fg = colors.red }, --a number constant: 234, 0xff
   { hg = 'Boolean', fg = colors.red }, --a boolean constant: TRUE, false
   { hg = 'Float', fg = colors.red }, --a floating point constant: 2.3e10
-  { hg = 'Identifier', fg = colors.foreground }, --any variable name
-  { hg = 'Function', fg = colors.blue }, --function name (also: methods for classes)
-  { hg = 'Statement', fg = colors.purple }, --any statement
-  { hg = 'Conditional', fg = colors.purple }, --if, then, else, endif, switch, etc.
-  { hg = 'Repeat', fg = colors.purple }, --for, do, while, etc.
-  { hg = 'Label', fg = colors.purple }, --case, default, etc.
-  { hg = 'Operator', fg = colors.foreground }, --sizeof", "+", "*", etc.
-  { hg = 'Keyword', fg = colors.red }, --any other keyword
-  { hg = 'Exception', fg = colors.purple }, --try, catch, throw
-  { hg = 'PreProc', fg = colors.red }, --generic Preprocessor
-  { hg = 'Include', fg = colors.foreground}, --preprocessor #include
-  { hg = 'Define', fg = colors.purple }, --preprocessor #define
-  { hg = 'Macro', fg = colors.purple }, --same as Define
-  { hg = 'PreCondit', fg = colors.purple }, --preprocessor #if, #else, #endif, etc.
-  { hg = 'Type', fg = colors.red }, --int, long, char, etc.
-  { hg = 'StorageClass', fg = colors.purple }, --static, register, volatile, etc.
-  { hg = 'Structure', fg = colors.purple }, --struct, union, enum, etc.
-  { hg = 'Typedef', fg = colors.purple }, --A typedef
-  { hg = 'Special', fg = colors.red }, --any special symbol
+  --{ hg = 'Identifier', fg = colors.foreground }, --any variable name
+  --{ hg = 'Function', fg = colors.blue }, --function name (also: methods for classes)
+  --{ hg = 'Statement', fg = colors.purple }, --any statement
+  --{ hg = 'Conditional', fg = colors.purple }, --if, then, else, endif, switch, etc.
+  --{ hg = 'Repeat', fg = colors.purple }, --for, do, while, etc.
+  --{ hg = 'Label', fg = colors.purple }, --case, default, etc.
+  --{ hg = 'Operator', fg = colors.foreground }, --sizeof", "+", "*", etc.
+  --{ hg = 'Keyword', fg = colors.red }, --any other keyword
+  --{ hg = 'Exception', fg = colors.purple }, --try, catch, throw
+  --{ hg = 'PreProc', fg = colors.red }, --generic Preprocessor
+  --{ hg = 'Include', fg = colors.foreground}, --preprocessor #include
+  --{ hg = 'Define', fg = colors.purple }, --preprocessor #define
+  --{ hg = 'Macro', fg = colors.purple }, --same as Define
+  --{ hg = 'PreCondit', fg = colors.purple }, --preprocessor #if, #else, #endif, etc.
+  --{ hg = 'Type', fg = colors.red }, --int, long, char, etc.
+  --{ hg = 'StorageClass', fg = colors.purple }, --static, register, volatile, etc.
+  --{ hg = 'Structure', fg = colors.purple }, --struct, union, enum, etc.
+  --{ hg = 'Typedef', fg = colors.purple }, --A typedef
+ -- { hg = 'Special', fg = colors.red }, --any special symbol
   --{ hg = 'SpecialChar', fg = colors.foreground}, --special character in a constant
   { hg = 'Tag' }, --you can use CTRL-] on this
   { hg = 'Delimiter',fg = colors.foreground }, --character that needs attention
