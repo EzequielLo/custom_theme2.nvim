@@ -28,17 +28,17 @@ local highlights = {
   { hg = 'Number', fg = colors.red }, --a number constant: 234, 0xff
   { hg = 'Boolean', fg = colors.red }, --a boolean constant: TRUE, false
   { hg = 'Float', fg = colors.red }, --a floating point constant: 2.3e10
-  --{ hg = 'Identifier', fg = colors.foreground }, --any variable name
-  --{ hg = 'Function', fg = colors.blue }, --function name (also: methods for classes)
+  { hg = 'Identifier', fg = colors.red}, --any variable name
+  { hg = 'Function', fg = colors.blue }, --function name (also: methods for classes)
   { hg = 'Statement', fg = colors.purple }, --any statement
   { hg = 'Conditional', fg = colors.purple }, --if, then, else, endif, switch, etc.
   { hg = 'Repeat', fg = colors.purple }, --for, do, while, etc.
   { hg = 'Label', fg = colors.purple }, --case, default, etc.
-  --{ hg = 'Operator', fg = colors.foreground }, --sizeof", "+", "*", etc.
-  --{ hg = 'Keyword', fg = colors.red }, --any other keyword
+  { hg = 'Operator', fg = colors.foreground }, --sizeof", "+", "*", etc.
+  { hg = 'Keyword', fg = colors.foreground}, --any other keyword
   --{ hg = 'Exception', fg = colors.purple }, --try, catch, throw
   --{ hg = 'PreProc', fg = colors.red }, --generic Preprocessor
-  --{ hg = 'Include', fg = colors.foreground}, --preprocessor #include
+  { hg = 'Include', fg = colors.foreground}, --preprocessor #include
   --{ hg = 'Define', fg = colors.purple }, --preprocessor #define
   --{ hg = 'Macro', fg = colors.purple }, --same as Define
   --{ hg = 'PreCondit', fg = colors.purple }, --preprocessor #if, #else, #endif, etc.
