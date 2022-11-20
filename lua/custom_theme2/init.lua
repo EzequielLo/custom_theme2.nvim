@@ -37,7 +37,7 @@ local highlights = {
   { hg = 'Operator', fg = colors.foreground }, --sizeof", "+", "*", etc.
   { hg = 'Keyword', fg = colors.purple}, --any other keyword
   { hg = 'Exception', fg = colors.red }, --try, catch, throw
-  --{ hg = 'PreProc', fg = colors.red }, --generic Preprocessor
+  { hg = 'PreProc', fg = colors.foregorund }, --generic Preprocessor
   { hg = 'Include', fg = colors.foreground}, --preprocessor #include
   { hg = 'Define', fg = colors.purple }, --preprocessor #define
   { hg = 'Macro', fg = colors.red}, --same as Define
