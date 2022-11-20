@@ -36,7 +36,7 @@ local highlights = {
   { hg = 'Label', fg = colors.purple }, --case, default, etc.
   { hg = 'Operator', fg = colors.foreground }, --sizeof", "+", "*", etc.
   { hg = 'Keyword', fg = colors.purple}, --any other keyword
-  --{ hg = 'Exception', fg = colors.purple }, --try, catch, throw
+  { hg = 'Exception', fg = colors.red }, --try, catch, throw
   { hg = 'PreProc', fg = colors.red }, --generic Preprocessor
   { hg = 'Include', fg = colors.foreground}, --preprocessor #include
   --{ hg = 'Define', fg = colors.purple }, --preprocessor #define
