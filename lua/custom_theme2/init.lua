@@ -39,9 +39,9 @@ local highlights = {
   { hg = 'Exception', fg = colors.purple }, --try, catch, throw
   { hg = 'PreProc', fg = colors.purple }, --generic Preprocessor
   { hg = 'Include', fg = colors.red}, --preprocessor #include
-  { hg = 'Define', fg = colors.purple }, --preprocessor #define
-  { hg = 'Macro', fg = colors.purple }, --same as Define
-  { hg = 'PreCondit', fg = colors.purple }, --preprocessor #if, #else, #endif, etc.
+  --{ hg = 'Define', fg = colors.purple }, --preprocessor #define
+  --{ hg = 'Macro', fg = colors.purple }, --same as Define
+  --{ hg = 'PreCondit', fg = colors.purple }, --preprocessor #if, #else, #endif, etc.
   { hg = 'Type', fg = colors.red }, --int, long, char, etc.
   { hg = 'StorageClass', fg = colors.purple }, --static, register, volatile, etc.
   { hg = 'Structure', fg = colors.purple }, --struct, union, enum, etc.
