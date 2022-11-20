@@ -8,19 +8,19 @@ local colors = {
   background = '#1d1f21',
   foreground = '#c5c8c6',
   comment_grey = '#737480',
-  gutter_fg_grey = '#242430',
+  gutter_fg_grey = '#737480',
   cursor_grey = '#242430',
   visual_grey = '#5F5F71',
   menu_grey = '#5F5F71',
   special_grey = '#5F5F71',
-  vertsplit = '#5C5C68',
+  vertsplit = '#737480',
 }
 
 local highlights = {
 
   -- Syntax Groups (descriptions and ordering from `:h w18`)
   { hg = 'Comment', fg = colors.comment_grey, gui = 'italic', cterm = 'italic' }, -- any comment
-  { hg = 'Constant', fg = colors.red }, --any constant
+  { hg = 'Constant', fg = colors.foreground }, --any constant
   { hg = 'String', fg = colors.green }, --a string constant: "this is a string"
   { hg = 'Character', fg = colors.green }, --a character constant: 'c', '\n'
   { hg = 'Number', fg = colors.red }, --a number constant: 234, 0xff
