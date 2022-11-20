@@ -31,27 +31,27 @@ local highlights = {
   { hg = 'Identifier', fg = colors.foreground }, --any variable name
   { hg = 'Function', fg = colors.blue }, --function name (also: methods for classes)
   { hg = 'Statement', fg = colors.purple }, --any statement
-  --{ hg = 'Conditional', fg = colors.purple }, --if, then, else, endif, switch, etc.
-  --{ hg = 'Repeat', fg = colors.purple }, --for, do, while, etc.
-  --{ hg = 'Label', fg = colors.purple }, --case, default, etc.
-  --{ hg = 'Operator', fg = colors.purple }, --sizeof", "+", "*", etc.
-  --{ hg = 'Keyword', fg = colors.purple }, --any other keyword
-  --{ hg = 'Exception', fg = colors.purple }, --try, catch, throw
+  { hg = 'Conditional', fg = colors.purple }, --if, then, else, endif, switch, etc.
+  { hg = 'Repeat', fg = colors.purple }, --for, do, while, etc.
+  { hg = 'Label', fg = colors.purple }, --case, default, etc.
+  { hg = 'Operator', fg = colors.purple }, --sizeof", "+", "*", etc.
+  { hg = 'Keyword', fg = colors.purple }, --any other keyword
+  { hg = 'Exception', fg = colors.purple }, --try, catch, throw
   { hg = 'PreProc', fg = colors.red }, --generic Preprocessor
-  --{ hg = 'Include', fg = colors.blue }, --preprocessor #include
+  { hg = 'Include', fg = colors.blue }, --preprocessor #include
   { hg = 'Define', fg = colors.purple }, --preprocessor #define
   { hg = 'Macro', fg = colors.purple }, --same as Define
-  --{ hg = 'PreCondit', fg = colors.red }, --preprocessor #if, #else, #endif, etc.
+  { hg = 'PreCondit', fg = colors.purple }, --preprocessor #if, #else, #endif, etc.
   { hg = 'Type', fg = colors.red }, --int, long, char, etc.
-  --{ hg = 'StorageClass', fg = colors.red }, --static, register, volatile, etc.
-  --{ hg = 'Structure', fg = colors.red }, --struct, union, enum, etc.
-  --{ hg = 'Typedef', fg = colors.red }, --A typedef
+  { hg = 'StorageClass', fg = colors.purple }, --static, register, volatile, etc.
+  { hg = 'Structure', fg = colors.purple }, --struct, union, enum, etc.
+  { hg = 'Typedef', fg = colors.purple }, --A typedef
   { hg = 'Special', fg = colors.foreground }, --any special symbol
-  --{ hg = 'SpecialChar', fg = colors.red }, --special character in a constant
-  --{ hg = 'Tag' }, --you can use CTRL-] on this
-  --{ hg = 'Delimiter' }, --character that needs attention
-  --{ hg = 'SpecialComment', fg = colors.comment_grey }, --special things inside a comment
-  --{ hg = 'Debug' }, --debugging statements
+  { hg = 'SpecialChar', fg = colors.red }, --special character in a constant
+  { hg = 'Tag' }, --you can use CTRL-] on this
+  { hg = 'Delimiter' }, --character that needs attention
+  { hg = 'SpecialComment', fg = colors.comment_grey }, --special things inside a comment
+  { hg = 'Debug' }, --debugging statements
   { hg = 'Underlined', gui = 'underline', cterm = 'underline' }, --text that stands out, HTML links
   { hg = 'Ignore' }, --left blank, hidden
   { hg = 'Error', fg = colors.red }, --any erroneous construct
