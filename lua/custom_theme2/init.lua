@@ -37,11 +37,11 @@ local highlights = {
   { hg = 'Operator', fg = colors.foreground }, --sizeof", "+", "*", etc.
   { hg = 'Keyword', fg = colors.purple}, --any other keyword
   { hg = 'Exception', fg = colors.red }, --try, catch, throw
-  { hg = 'PreProc', fg = colors.purple }, --generic Preprocessor
+  --{ hg = 'PreProc', fg = colors.purple }, --generic Preprocessor
   { hg = 'Include', fg = colors.foreground}, --preprocessor #include
   { hg = 'Define', fg = colors.purple }, --preprocessor #define
   { hg = 'Macro', fg = colors.foreground}, --same as Define
-  { hg = 'PreCondit', fg = colors.purple}, --preprocessor #if, #else, #endif, etc.
+  --{ hg = 'PreCondit', fg = colors.purple}, --preprocessor #if, #else, #endif, etc.
   { hg = 'Type', fg = colors.red }, --int, long, char, etc.
   { hg = 'StorageClass', fg = colors.purple }, --static, register, volatile, etc.
   { hg = 'Structure', fg = colors.purple }, --struct, union, enum, etc.
