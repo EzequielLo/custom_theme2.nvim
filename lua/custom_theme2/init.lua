@@ -39,8 +39,8 @@ local highlights = {
   { hg = 'Exception', fg = colors.purple }, --try, catch, throw
   { hg = 'PreProc', fg = colors.red }, --generic Preprocessor
   { hg = 'Include', fg = colors.foreground}, --preprocessor #include
-  --{ hg = 'Define', fg = colors.purple }, --preprocessor #define
-  --{ hg = 'Macro', fg = colors.purple }, --same as Define
+  { hg = 'Define', fg = colors.purple }, --preprocessor #define
+  { hg = 'Macro', fg = colors.purple }, --same as Define
   { hg = 'PreCondit', fg = colors.purple }, --preprocessor #if, #else, #endif, etc.
   { hg = 'Type', fg = colors.red }, --int, long, char, etc.
   { hg = 'StorageClass', fg = colors.purple }, --static, register, volatile, etc.
@@ -58,7 +58,7 @@ local highlights = {
   { hg = 'Todo', fg = colors.purple }, --anything that needs extra attention; mostly the keywords TODO FIXME and XXX
 
   -- Highlighting Groups (descriptions and ordering from ` =h highlight-groups`) {{{
-  { hg = 'ColorColumn', bg = colors.cursor_grey }, --used for the columns set with 'colorcolumn'
+  { hg = 'ColorColumn', bg = colors.gutter_fg_grey  }, --used for the columns set with 'colorcolumn'
   { hg = 'Conceal' }, --placeholder characters substituted for concealed text (see 'conceallevel')
   { hg = 'Cursor', fg = colors.black, bg = colors.blue }, --the character under the cursor
   { hg = 'CursorIM' }, --like Cursor, but used when in IME mode
