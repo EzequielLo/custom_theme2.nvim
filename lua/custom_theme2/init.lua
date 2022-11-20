@@ -40,13 +40,13 @@ local highlights = {
   { hg = 'PreProc', fg = colors.foregorund }, --generic Preprocessor
   { hg = 'Include', fg = colors.foreground}, --preprocessor #include
   { hg = 'Define', fg = colors.purple }, --preprocessor #define
-  { hg = 'Macro', fg = colors.foreground}, --same as Define
+  { hg = 'Macro', fg = colors.red}, --same as Define
   { hg = 'PreCondit', fg = colors.foreground}, --preprocessor #if, #else, #endif, etc.
   { hg = 'Type', fg = colors.red }, --int, long, char, etc.
   { hg = 'StorageClass', fg = colors.purple }, --static, register, volatile, etc.
   { hg = 'Structure', fg = colors.purple }, --struct, union, enum, etc.
   { hg = 'Typedef', fg = colors.purple }, --A typedef
-  { hg = 'Special', fg = colors.red}, --any special symbol
+  { hg = 'Special', fg = colors.purple}, --any special symbol
   { hg = 'SpecialChar', fg = colors.purple}, --special character in a constant
   { hg = 'Tag' }, --you can use CTRL-] on this
   { hg = 'Delimiter',fg = colors.foreground }, --character that needs attention
