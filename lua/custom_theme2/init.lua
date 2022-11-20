@@ -5,6 +5,8 @@ local colors = {
   green = '#b5bd68',
   blue = '#8abeb7',
   purple = '#b294bb',
+  black = '#1d1f21',
+  white = '#c5c8c6',
   background = '#1d1f21',
   foreground = '#c5c8c6',
   comment_grey = '#737480',
@@ -37,8 +39,8 @@ local highlights = {
   --{ hg = 'Exception', fg = colors.purple }, --try, catch, throw
   { hg = 'PreProc', fg = colors.red }, --generic Preprocessor
   --{ hg = 'Include', fg = colors.blue }, --preprocessor #include
-  --{ hg = 'Define', fg = colors.purple }, --preprocessor #define
- -- { hg = 'Macro', fg = colors.purple }, --same as Define
+  { hg = 'Define', fg = colors.purple }, --preprocessor #define
+  { hg = 'Macro', fg = colors.purple }, --same as Define
   --{ hg = 'PreCondit', fg = colors.red }, --preprocessor #if, #else, #endif, etc.
   { hg = 'Type', fg = colors.red }, --int, long, char, etc.
   --{ hg = 'StorageClass', fg = colors.red }, --static, register, volatile, etc.
@@ -65,7 +67,7 @@ local highlights = {
   { hg = 'DiffAdd', bg = colors.green, fg = colors.black }, --diff mode: Added line
   { hg = 'DiffChange', fg = colors.red, gui = 'underline', cterm = 'underline' }, --diff mode: Changed line
   { hg = 'DiffDelete', bg = colors.red, fg = colors.black }, --diff mode: Deleted line
-  { hg = 'DiffText', bg = colors.yellow, fg = colors.black }, --diff mode: Changed text within a changed line
+  { hg = 'DiffText', bg = colors.green, fg = colors.black }, --diff mode: Changed text within a changed line
   { hg = 'ErrorMsg', fg = colors.red }, --error messages on the command line
   { hg = 'VertSplit', fg = colors.vertsplit }, --the column separating vertically split windows
   { hg = 'Folded', fg = colors.comment_grey }, --line used for closed folds
@@ -88,9 +90,9 @@ local highlights = {
   { hg = 'Search', fg = colors.black, bg = colors.red }, --Last search pattern highlighting (see 'hlsearch'). Also used for similar items that need to stand out.
   { hg = 'SpecialKey', fg = colors.special_grey }, --Meta and special keys listed with " =map", also for text used to show unprintable characters in the text, 'listchars'. Generally: text that is displayed differently from what it really is.
   { hg = 'SpellBad', gui = 'undercurl', guisp = colors.red }, --Word that is not recognized by the spellchecker. This will be combined with the highlighting used otherwise.
-  { hg = 'SpellCap', fg = colors.dark_red }, --Word that should start with a capital. This will be combined with the highlighting used otherwise.
-  { hg = 'SpellLocal', fg = colors.dark_red }, --Word that is recognized by the spellchecker as one that is used in another region. This will be combined with the highlighting used otherwise.
-  { hg = 'SpellRare', fg = colors.dark_red }, --Word that is recognized by the spellchecker as one that is hardly ever used. spell This will be combined with the highlighting used otherwise.
+  { hg = 'SpellCap', fg = colors.red }, --Word that should start with a capital. This will be combined with the highlighting used otherwise.
+  { hg = 'SpellLocal', fg = colors.red }, --Word that is recognized by the spellchecker as one that is used in another region. This will be combined with the highlighting used otherwise.
+  { hg = 'SpellRare', fg = colors.red }, --Word that is recognized by the spellchecker as one that is hardly ever used. spell This will be combined with the highlighting used otherwise.
   { hg = 'StatusLine', fg = colors.white, bg = colors.cursor_grey }, --status line of current window
   { hg = 'StatusLineNC', fg = colors.comment_grey }, --status lines of not-current windows Note = if this is equal to "StatusLine" Vim will use "^^^" in the status line of the current window.
   { hg = 'StatusLineTerm', fg = colors.white, bg = colors.cursor_grey }, --status line of current :terminal window
@@ -102,28 +104,28 @@ local highlights = {
   { hg = 'Title', fg = colors.green }, --titles for output from " =set all", ":autocmd" etc.
   { hg = 'Visual', bg = colors.visual_grey }, --Visual mode selection
   { hg = 'VisualNOS', bg = colors.visual_grey }, --Visual mode selection when vim is "Not Owning the Selection". Only X11 Gui's gui-x11 and xterm-clipboard supports this.
-  { hg = 'WarningMsg', fg = colors.yellow }, --warning messages
+  { hg = 'WarningMsg', fg = colors.green }, --warning messages
   { hg = 'WildMenu', fg = colors.black, bg = colors.blue }, --current match in 'wildmenu' completion
 
   -- Diagnostics
   { hg = 'DiagnosticError', fg = colors.red },
-  { hg = 'DiagnosticWarn', fg = colors.yellow },
+  { hg = 'DiagnosticWarn', fg = colors.green },
   { hg = 'DiagnosticInfo', fg = colors.blue },
-  { hg = 'DiagnosticHint', fg = colors.cyan },
+  { hg = 'DiagnosticHint', fg = colors.comment_grey },
   { hg = 'DiagnosticUnderlineError', fg = colors.red, gui = 'underline', cterm = 'underline' },
-  { hg = 'DiagnosticUnderlineWarn', fg = colors.yellow, gui = 'underline', cterm = 'underline' },
+  { hg = 'DiagnosticUnderlineWarn', fg = colors.green, gui = 'underline', cterm = 'underline' },
   { hg = 'DiagnosticUnderlineInfo', fg = colors.blue, gui = 'underline', cterm = 'underline' },
-  { hg = 'DiagnosticUnderlineHint', fg = colors.cyan, gui = 'underline', cterm = 'underline' },
+  { hg = 'DiagnosticUnderlineHint', fg = colors.comment_grey, gui = 'underline', cterm = 'underline' },
 
   -- Neovim's built-in language server client
   { hg = 'LspReferenceWrite', fg = colors.blue, gui='underline' },
   { hg = 'LspReferenceText', fg = colors.blue, gui='underline' },
   { hg = 'LspReferenceRead', fg = colors.blue, gui='underline' },
-  { hg = 'LspSignatureActiveParameter', fg=colors.yellow, gui='bold' },
+  { hg = 'LspSignatureActiveParameter', fg=colors.green, gui='bold' },
 
   -- ... an exception for my favorite plugin
   { hg = 'GitSignsAdd', fg = colors.green },
-  { hg = 'GitSignsChange', fg = colors.yellow },
+  { hg = 'GitSignsChange', fg = colors.blue },
   { hg = 'GitSignsDelete', fg = colors.red },
 }
 
