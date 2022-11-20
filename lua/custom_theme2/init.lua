@@ -10,8 +10,8 @@ local colors = {
   comment_grey = '#737480',
   gutter_fg_grey = '#242430',
   cursor_grey = '#242430',
-  visual_grey = '#5F5F71'',
-  menu_grey = '#5F5F71'',
+  visual_grey = '#5F5F71',
+  menu_grey = '#5F5F71',
   special_grey = '#5F5F71',
   vertsplit = '#5C5C68',
 }
