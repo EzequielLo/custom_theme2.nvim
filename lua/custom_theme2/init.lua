@@ -22,7 +22,7 @@ local highlights = {
 
   -- Syntax Groups (descriptions and ordering from `:h w18`)
   { hg = 'Comment', fg = colors.comment_grey, gui = 'italic', cterm = 'italic' }, -- any comment
-  --{ hg = 'Constant', fg = colors.foreground }, --any constant
+  { hg = 'Constant', fg = colors.red }, --any constant
   { hg = 'String', fg = colors.green }, --a string constant: "this is a string"
   { hg = 'Character', fg = colors.green }, --a character constant: 'c', '\n'
   { hg = 'Number', fg = colors.red }, --a number constant: 234, 0xff
