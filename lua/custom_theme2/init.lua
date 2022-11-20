@@ -41,7 +41,7 @@ local highlights = {
   { hg = 'Include', fg = colors.foreground}, --preprocessor #include
   --{ hg = 'Define', fg = colors.purple }, --preprocessor #define
   --{ hg = 'Macro', fg = colors.purple }, --same as Define
-  --{ hg = 'PreCondit', fg = colors.purple }, --preprocessor #if, #else, #endif, etc.
+  { hg = 'PreCondit', fg = colors.red }, --preprocessor #if, #else, #endif, etc.
   { hg = 'Type', fg = colors.red }, --int, long, char, etc.
   { hg = 'StorageClass', fg = colors.purple }, --static, register, volatile, etc.
   { hg = 'Structure', fg = colors.purple }, --struct, union, enum, etc.
