@@ -35,7 +35,7 @@ local highlights = {
   { hg = 'Repeat', fg = colors.purple }, --for, do, while, etc.
   { hg = 'Label', fg = colors.purple }, --case, default, etc.
   { hg = 'Operator', fg = colors.foreground }, --sizeof", "+", "*", etc.
-  { hg = 'Keyword', fg = colors.purple}, --any other keyword
+  { hg = 'Keyword', fg = colors.foreground}, --any other keyword
   { hg = 'Exception', fg = colors.red }, --try, catch, throw
   { hg = 'PreProc', fg = colors.foregorund }, --generic Preprocessor
   { hg = 'Include', fg = colors.purple}, --preprocessor #include
